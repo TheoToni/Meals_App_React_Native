@@ -1,8 +1,11 @@
 import { View, StyleSheet, Text } from "react-native";
-function MealDetailScreen() {
+import { MEALS } from "../data/dummy-data";
+function MealDetailScreen({ route }) {
+  const mealId = route.params.mealId;
+  const meal = MEALS.find((meal) => meal.id === mealId);
   return (
     <View>
-      <Text>Detailpage</Text>
+      <Text>{mealId}</Text>
     </View>
   );
 }
