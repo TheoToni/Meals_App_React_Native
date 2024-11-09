@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     padding: 6,
 
-    marginHorizontal: 24,
+    marginHorizontal: 12,
     marginVertical: 4,
   },
 });
