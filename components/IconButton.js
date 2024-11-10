@@ -1,13 +1,14 @@
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Pressable } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
 
-export default function IconButton() {
+export default function IconButton({ icon, color, onPress }) {
   return (
     <Pressable
       style={({ pressed }) => [styles.button, pressed && styles.pressed]}
+      onPress={onPress}
     >
-      <Ionicons name="star" size={24} color="white" />
+      <Ionicons name={icon} size={24} color={color} style={styles.icon} />
     </Pressable>
   );
 }
