@@ -30,16 +30,7 @@ export default function App() {
               contentStyle: { backgroundColor: "#3f2f25" },
             }}
           />
-          <Stack.Screen
-            name="MealsOverview"
-            component={MealsOverviewScreen}
-            /* options={({ route, navigation }) => {
-              const catId = route.params.categoryId;
-              return {
-                title: catId,
-              };
-            }} */
-          />
+          <Stack.Screen name="MealsOverview" component={MealsOverviewScreen} />
 
           <Stack.Screen name="MealDetailScreen" component={MealDetailScreen} />
         </Stack.Navigator>
